@@ -1,0 +1,24 @@
+###
+POST http://localhost:3000/signup
+Content-Type: application/json
+
+{
+  "username": "testuser",
+  "email": "   indra1@gmail.com",
+  "password": "Test@1234",
+  "confirmPassword": "Test@1234"
+}
+
+###
+GET http://localhost:3000/
+
+
+###
+POST http://localhost:3000/signin
+Content-Type: application/json
+
+{
+  "username": "testuser",
+  "password": "Test@1234"
+  
+}
