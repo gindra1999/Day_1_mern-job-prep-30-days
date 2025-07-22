@@ -22,3 +22,9 @@ Content-Type: application/json
   "password": "Test@1234"
   
 }
+
+###
+
+### Access Protected Home Page (Add token manually)
+GET http://localhost:3000/home
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ODdlMWNmY2NkODY2NjE1NzYyYmQzOGQiLCJpYXQiOjE3NTMxNzk0MDIsImV4cCI6MTc1MzE4MzAwMn0.ECacHzp4ZjHJJa58J5Yhyl89AIhwzTf55_B3aT_GkdU

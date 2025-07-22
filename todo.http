@@ -1,0 +1,40 @@
+### Create a new Todo
+POST http://localhost:3000/api/todos
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ODdlMWNmY2NkODY2NjE1NzYyYmQzOGQiLCJpYXQiOjE3NTMyMDAzNjgsImV4cCI6MTc1MzIwMzk2OH0.PBoDENAMIo7FQYVcHEQWngdxPKiL4F0AnzpoWFQs61Y
+
+{
+  "title": "Learn Express Middleware",
+  "status": "pending"
+}
+
+###
+
+### Get all Todos for logged-in user
+GET http://localhost:3000/api/todos
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ODdlMWNmY2NkODY2NjE1NzYyYmQzOGQiLCJpYXQiOjE3NTMyMDAzNjgsImV4cCI6MTc1MzIwMzk2OH0.PBoDENAMIo7FQYVcHEQWngdxPKiL4F0AnzpoWFQs61Y
+
+###
+
+### Get a single Todo by ID
+GET http://localhost:3000/api/todos/687e1cfccd866615762bd38d
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ODdlMWNmY2NkODY2NjE1NzYyYmQzOGQiLCJpYXQiOjE3NTMyMDAzNjgsImV4cCI6MTc1MzIwMzk2OH0.PBoDENAMIo7FQYVcHEQWngdxPKiL4F0AnzpoWFQs61Y
+
+###
+
+### Update a Todo by ID
+PUT http://localhost:3000/api/todos/687fba1488756ae376ec5b99
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ODdlMWNmY2NkODY2NjE1NzYyYmQzOGQiLCJpYXQiOjE3NTMyMDAzNjgsImV4cCI6MTc1MzIwMzk2OH0.PBoDENAMIo7FQYVcHEQWngdxPKiL4F0AnzpoWFQs61Y
+
+{
+  "title": "Learn JWT Authentication",
+  "status": "in-progress"
+}
+
+###
+
+### Delete a Todo by ID
+DELETE http://localhost:3000/api/todos/687fba1488756ae376ec5b99
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ODdlMWNmY2NkODY2NjE1NzYyYmQzOGQiLCJpYXQiOjE3NTMyMDAzNjgsImV4cCI6MTc1MzIwMzk2OH0.PBoDENAMIo7FQYVcHEQWngdxPKiL4F0AnzpoWFQs61Y
+
